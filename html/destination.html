@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Ethiopian Destinations - Discover Abysinia</title>
+    <link rel="stylesheet" href="/style/destination.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lato:wght@400;500;600;700&display=swap"
+    rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><a href="/html/index.html">Discover Abysinia</a></h1>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destination.html" class="active">Destinations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <!-- Mobile Navigation Toggle -->
+          <label for="mobile-menu-toggle" class="mobile-menu-btn">
+            <i class="ri-menu-line"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation (Hidden by default) -->
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-toggle" />
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/destination.html">Destinations</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
+      </ul>
+      <label for="mobile-menu-toggle" class="mobile-close-btn">
+        <i class="ri-close-line"></i>
+      </label>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <h1 class="page-title">Explore Ethiopian Destinations</h1>
+          <p class="page-subtitle">
+            Discover Ethiopia's amazing historical sites, natural wonders, and cultural treasures. 
+            From ancient rock-hewn churches to breathtaking mountain landscapes.
+          </p>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+          <div class="filters-container">
+            <div class="search-wrapper">
+              <i class="ri-search-line search-icon"></i>
+              <input
+                type="text"
+                id="search-bar"
+                class="search-input"
+                placeholder="Search destinations, locations..."
+                aria-label="Search destinations"
+              />
+            </div>
+            
+            <div class="filter-wrapper">
+              <i class="ri-filter-line filter-icon"></i>
+              <select id="filtering-type" class="filter-select" aria-label="Filter by category">
+                <option value="all" selected>All Categories</option>
+                <option value="cultural">Cultural Heritage</option>
+                <option value="mountains">Mountains & Nature</option>
+                <option value="historical">Historical Sites</option>
+                <option value="national-parks">National Parks</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="results-count">
+            <span class="count">18</span> destinations found
+          </div>
+        </section>
+
+        <!-- Destinations Grid -->
+        <section class="destinations-grid">
+          <div class="grid-container">
+            <!-- Destination Card 1: Lalibela -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/northern/laliblea.jpg" 
+                  alt="Lalibela Rock Churches - ancient rock-hewn churches in Ethiopia"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,500 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Amhara Region, Northern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Lalibela Rock Churches</h3>
+                <p class="card-description">
+                  A holy town famous for its 12th‑century rock‑hewn churches, a
+                  major UNESCO World Heritage pilgrimage site.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Lalibela region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 2: Axum -->
+            <article class="destination-card" data-category="historical">
+              <div class="card-image">
+                <img 
+                  src="/images/northern/aksum.jpg" 
+                  alt="Ancient ruins and obelisks in Axum, Ethiopia"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 5,500 ETB</span>
+                <div class="category-tag">Historical Sites</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Tigray Region, Northern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Axum</h3>
+                <p class="card-description">
+                  Ancient capital of a powerful kingdom, known for towering stone
+                  stelae and important archaeological remains.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Axum region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 3: Gondar -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/northern/gondar.jpg" 
+                  alt="Castles and palaces in Gondar, Ethiopia"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,900 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Amhara Region, North of Lake Tana, Northern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Gondar</h3>
+                <p class="card-description">
+                  Historic city with royal castles and old churches, often called
+                  the "Camelot of Africa."
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Gondar region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 4: Simien Mountains -->
+            <article class="destination-card" data-category="mountains">
+              <div class="card-image">
+                <img 
+                  src="/images/northern/seimon park.jpg" 
+                  alt="Dramatic mountain landscapes in Simien Mountains"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 9,000 ETB</span>
+                <div class="category-tag">Mountains & Nature</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Amhara Region, Northern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Simien Mountains National Park</h3>
+                <p class="card-description">
+                  Dramatic highland scenery with deep cliffs, ideal for trekking
+                  and home to endemic wildlife.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Simien Mountains">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 5: Bahir Dar -->
+            <article class="destination-card" data-category="natural">
+              <div class="card-image">
+                <img 
+                  src="/images/northern/bahirdar.jpg" 
+                  alt="Lake Tana and Blue Nile Falls in Bahir Dar"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Natural Wonders</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Amhara Region, Northern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Bahir Dar</h3>
+                <p class="card-description">
+                  Lakeside city on Lake Tana, gateway to island monasteries and
+                  the nearby Blue Nile Falls.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Bahir Dar region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 6: Addis Ababa -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/centeral/addis ababa.jpg" 
+                  alt="Modern buildings and traditional markets in Addis Ababa"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 5,300 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Highland, Central Ethiopia</span>
+                </div>
+                <h3 class="card-title">Addis Ababa</h3>
+                <p class="card-description">
+                  Lively capital with museums, markets, and viewpoints that
+                  showcase Ethiopia's modern life and deep history.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Addis Ababa">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 7: Debre Libanos -->
+            <article class="destination-card" data-category="religious">
+              <div class="card-image">
+                <img 
+                  src="/images/centeral/dbrelibanos.jpg" 
+                  alt="Debre Libanos Monastery and surrounding canyon"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Religious Sites</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Oromia Region, Central Ethiopia</span>
+                </div>
+                <h3 class="card-title">Debre Libanos</h3>
+                <p class="card-description">
+                  Mountain monastery overlooking a vast gorge, combining spiritual
+                  heritage with impressive canyon views.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Debre Libanos">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 8: Entoto Hills -->
+            <article class="destination-card" data-category="mountains">
+              <div class="card-image">
+                <img 
+                  src="/images/centeral/entoto.jpg" 
+                  alt="Forested hills and panoramic views from Entoto Hills"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Mountains & Nature</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>North of Addis Ababa, Central Ethiopia</span>
+                </div>
+                <h3 class="card-title">Entoto Hills</h3>
+                <p class="card-description">
+                  Forested highlands above Addis offering cool air, panoramic city
+                  views, and historic churches.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Entoto Hills">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 9: Mount Zuqualla -->
+            <article class="destination-card" data-category="mountains">
+              <div class="card-image">
+                <img 
+                  src="/images/centeral/zqualla.jpg" 
+                  alt="Volcanic landscape and crater lake of Mount Zuqualla"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Mountains & Nature</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Oromia Region, Central Ethiopia</span>
+                </div>
+                <h3 class="card-title">Mount Zuqualla</h3>
+                <p class="card-description">
+                  Dormant volcano with a crater lake and monastery, popular for
+                  peaceful hikes and pilgrimages.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Mount Zuqualla">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 10: Konso -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/southern/konso.jpg" 
+                  alt="Terraced hills and traditional villages in Konso"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Konso Zone, Southern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Konso</h3>
+                <p class="card-description">
+                  Terraced hills and fortified villages that reflect centuries‑old
+                  agricultural and cultural practices.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Konso region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 11: Arba Minch -->
+            <article class="destination-card" data-category="natural">
+              <div class="card-image">
+                <img 
+                  src="/images/southern/arbaminch.jpg" 
+                  alt="Twin lakes and scenic landscapes in Arba Minch"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Natural Wonders</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Gamo Zone, Southern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Arba Minch</h3>
+                <p class="card-description">
+                  Relaxed town by twin lakes, famous for boat trips to see
+                  crocodiles and local fishing life.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Arba Minch region">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 12: Nechisar National Park -->
+            <article class="destination-card" data-category="national-parks">
+              <div class="card-image">
+                <img 
+                  src="/images/southern/nechisarpark.jpg" 
+                  alt="Savanna landscape and wildlife in Nechisar National Park"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">National Parks</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Near Arba Minch, Southern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Nechisar National Park</h3>
+                <p class="card-description">
+                  Park of lakes and savanna landscapes, good for spotting birds,
+                  mammals, and beautiful sunsets.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Nechisar National Park">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 13: Omo Valley -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/southern/omo.jpg" 
+                  alt="Indigenous cultures and traditional villages in Omo Valley"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Omo Zone, Southern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Omo Valley</h3>
+                <p class="card-description">
+                  Remote region known for diverse ethnic groups, unique cultural
+                  traditions, and colorful weekly markets.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Omo Valley">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 14: Harar -->
+            <article class="destination-card" data-category="cultural">
+              <div class="card-image">
+                <img 
+                  src="/images/eastern/jegole.jpg" 
+                  alt="Walled city and traditional architecture of Harar"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Cultural Heritage</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Harari Region, Eastern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Harar</h3>
+                <p class="card-description">
+                  Ancient walled city with narrow alleys, coffee culture, and
+                  unique traditions like feeding hyenas at night.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Harar">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 15: Dire Dawa -->
+            <article class="destination-card" data-category="historical">
+              <div class="card-image">
+                <img 
+                  src="/images/eastern/diredawa.jpg" 
+                  alt="Historic railway town and architecture in Dire Dawa"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Historical Sites</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Addis-Djibouti corridor, Eastern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Dire Dawa</h3>
+                <p class="card-description">
+                  Historic railway town and commercial hub with lively streets and
+                  a mix of old and new architecture.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Dire Dawa">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 16: Awash National Park -->
+            <article class="destination-card" data-category="national-parks">
+              <div class="card-image">
+                <img 
+                  src="/images/eastern/awash.jpg" 
+                  alt="Savanna landscape and wildlife in Awash National Park"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">National Parks</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Park in the Afar and Oromia border area, Eastern Ethiopia</span>
+                </div>
+                <h3 class="card-title">Awash National Park</h3>
+                <p class="card-description">
+                  Rift Valley park with savanna, hot springs, waterfalls, and
+                  chances to see wildlife.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Awash National Park">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 17: Gambella National Park -->
+            <article class="destination-card" data-category="national-parks">
+              <div class="card-image">
+                <img 
+                  src="/images/western/gambelapark.jpg" 
+                  alt="Wetlands and wildlife in Gambella National Park"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">National Parks</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Gambella Region, western Ethiopia</span>
+                </div>
+                <h3 class="card-title">Gambella National Park</h3>
+                <p class="card-description">
+                  Wetland and grassland wilderness, important for migratory
+                  wildlife and birdlife.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Gambella National Park">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Destination Card 18: Benishangul‑Gumuz -->
+            <article class="destination-card" data-category="natural">
+              <div class="card-image">
+                <img 
+                  src="/images/western/benishangul.jpg" 
+                  alt="River gorges and rugged landscapes in Benishangul-Gumuz"
+                  loading="lazy"
+                />
+                <span class="price-tag">From 8,300 ETB</span>
+                <div class="category-tag">Natural Wonders</div>
+              </div>
+              <div class="card-content">
+                <div class="location">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Western Ethiopia</span>
+                </div>
+                <h3 class="card-title">Benishangul‑Gumuz</h3>
+                <p class="card-description">
+                  Little‑visited area of river gorges and rugged landscapes along
+                  the Blue Nile.
+                </p>
+                <div class="card-footer">
+                  <a href="#" class="explore-btn" aria-label="Explore Benishangul‑Gumuz">
+                    Explore Region <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Discover Abysinia</h3>
+            <p class="footer-description">
+              Your trusted guide to Ethiopia's most spectacular destinations. 
+              We connect travelers with authentic experiences and cultural treasures.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Visit our Facebook page">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" aria-label="Visit our Instagram page">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" aria-label="Visit our Twitter page">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="#" aria-label="Visit our YouTube channel">
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/destination.html">Destinations</a></li>
+              <li><a href="../html/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Contact Information</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="ri-map-pin-fill"></i>
+                <span>Bole Road, Addis Ababa, Ethiopia</span>
+              </li>
+              <li>
+                <i class="ri-phone-fill"></i>
+                <span>+251 911 234 567</span>
+              </li>
+              <li>
+                <i class="ri-mail-fill"></i>
+                <span>info@DiscoverAbysinia.com</span>
+              </li>
+              <li>
+                <i class="ri-time-fill"></i>
+                <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-section">
+            <h3 class="footer-title">Travel Newsletter</h3>
+            <p class="newsletter-text">
+              Subscribe to receive updates on new destinations and travel offers.
+            </p>
+            <form class="newsletter-form">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                aria-label="Email for newsletter subscription"
+                required
+              />
+              <button type="submit" aria-label="Subscribe to newsletter">
+                <i class="ri-send-plane-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Discover Abysinia Travel. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

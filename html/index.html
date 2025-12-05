@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="/style/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lato:wght@400;500;600;700&display=swap"
+    rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- homepage -->
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><a href="index.html">Discover Abysinia</a></h1>
+          </div>
+             <!-- Desktop Navigation -->
+             <nav class="desktop-nav">
+              <ul>
+                <li><a href="../html/index.html" class="active">Home</a></li>
+                <li><a href="../html/destination.html">Destinations</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            
+            <!-- Mobile Navigation Toggle -->
+            <label for="mobile-menu-toggle" class="mobile-menu-btn">
+              <i class="ri-menu-line"></i>
+            </label>
+          </div>
+        </div>
+      </header>
+         <!-- Desktop Navigation -->
+         <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href='destionation.html'>Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Navigation Toggle -->
+        <label for="mobile-menu-toggle" class="mobile-menu-btn">
+          <i class="ri-menu-line"></i>
+        </label>
+      </div>
+    </div>
+  </header>
+  <!--Mobile Navigation-->
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-toggle" />
+  <nav class="mobile-nav">
+    <div class="mobile-nav-content">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="mobile-menu-toggle" class="mobile-close-btn">
+        <i class="ri-close-line"></i>
+      </label>
+    </div>
+  </nav>
+      
+     <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Discover Your Ethiopian Story</h1>
+          <p class="hero-subtitle">
+            Journey through rich heritage and create unforgettable moments with Ethiopia's most trusted travel experts.
+          </p>
+          <div class="hero-buttons">
+            <a href="#destinations" class="btn btn-primary">
+              <span></span>
+              Explore Destinations <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <span></span>
+              Contact Us <i class="ri-phone-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Quick Booking Section -->
+      <section class="booking-section">
+        <div class="container">
+          <div class="booking-card">
+            <h2 class="booking-title">Plan Your Ethiopian Adventure</h2>
+            <p class="booking-subtitle">Book your journey with ease and confidence</p>
+            
+            <form class="booking-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="full-name">
+                    <i class="ri-user-line"></i>
+                    Full Name
+                  </label>
+                  <input 
+                    type="text" 
+                    id="full-name" 
+                    placeholder="Enter your full name"
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">
+                    <i class="ri-mail-line"></i>
+                    Email Address
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="your.email@example.com"
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                
+                <div class="form-group">
+                  <label for="destination">
+                    <i class="ri-map-pin-line"></i>
+                    Destination
+                  </label>
+                  <select id="destination" required aria-required="true">
+                    <option value="" disabled selected>Select your destination</option>
+                    <option value="northern">Northern Historical Route</option>
+                    <option value="central">Central Ethiopia</option>
+                    <option value="southern">Southern Cultural Route</option>
+                    <option value="eastern">Eastern Ethiopia</option>
+                    <option value="western">Western Ethiopia</option>
+                    <option value="custom">Custom Itinerary</option>
+                  </select>
+                  <i class="ri-arrow-down-s-line select-arrow"></i>
+                </div>
+                
+                <div class="form-group">
+                  <label for="travelers">
+                    <i class="ri-group-line"></i>
+                    Number of Travelers
+                  </label>
+                  <select id="travelers" required aria-required="true">
+                    <option value="" disabled selected>Select travelers</option>
+                    <option value="1">1 Traveler</option>
+                    <option value="2">2 Travelers</option>
+                    <option value="3-4">3-4 Travelers</option>
+                    <option value="5-6">5-6 Travelers</option>
+                    <option value="7+">7+ Travelers</option>
+                  </select>
+                  <i class="ri-arrow-down-s-line select-arrow"></i>
+                </div>
+                
+                <div class="form-group">
+                  <label for="check-in">
+                    <i class="ri-calendar-line"></i>
+                    Check-in Date
+                  </label>
+                  <input 
+                    type="date" 
+                    id="check-in" 
+                    required
+                    aria-required="true"
+                  >
+                </div>
+                
+                <div class="form-group">
+                  <label for="check-out">
+                    <i class="ri-calendar-line"></i>
+                    Check-out Date
+                  </label>
+                  <input 
+                    type="date" 
+                    id="check-out" 
+                    required
+                    aria-required="true"
+                  >
+                </div>
+              </div>
+              
+              <button type="submit" class="submit-btn">
+                <i class="ri-search-line"></i>
+                Search Available Trips
+              </button>
+            </form>
+            
+            <p class="booking-note">
+              <i class="ri-information-line"></i>
+              We'll contact you within 24 hours to discuss your itinerary
+            </p>
+          </div>
+        </div>
+      </section>
+
+   <!-- Why Choose Us Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Discover Abysinia Ethiopia</h2>
+          <p class="section-description">
+            Experience Ethiopia through the eyes of local experts who are passionate about sharing our country's beauty and culture.
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-user-star-fill"></i>
+            </div>
+            <h3>Expert Local Guides</h3>
+            <p>Certified Ethiopian guides with deep cultural knowledge and years of experience.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-shield-check-fill"></i>
+            </div>
+            <h3>Safe & Secure Travel</h3>
+            <p>Comprehensive safety protocols and 24/7 support throughout your journey.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-award-fill"></i>
+            </div>
+            <h3>Authentic Experiences</h3>
+            <p>Genuine cultural interactions and responsible tourism practices.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="ri-wallet-3-fill"></i>
+            </div>
+            <h3>Best Value Guarantee</h3>
+            <p>Competitive pricing with no hidden fees and flexible payment options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Destination Categories -->
+   <section class="destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Ethiopian Regions</h2>
+        <p class="section-description">
+          Discover Ethiopia's diverse landscapes and rich cultural heritage across five distinct regions.
+        </p>
+      </div>
+      
+      <div class="destinations-grid">
+        <!-- Northern Ethiopia -->
+        <article class="destination-card">
+          <div class="destination-image">
+            <img 
+              src="/images/northern/laliblea.jpg" 
+              alt="Ancient rock-hewn churches in Northern Ethiopia"
+              loading="lazy"
+            >
+            <div class="destination-badge">5 Destinations</div>
+          </div>
+          <div class="destination-content">
+            <h3>Northern Ethiopia</h3>
+            <p class="destination-count">Historical Route • UNESCO Sites</p>
+            <p class="destination-description">
+              Walk through ancient kingdoms and marvel at architectural wonders carved from solid rock centuries ago.
+            </p>
+            <a href="destionation.html#lalibela" class="explore-btn">
+              Explore Region <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Central Ethiopia -->
+        <article class="destination-card">
+          <div class="destination-image">
+            <img 
+              src="/images/centeral/AAcity.jpg" 
+              alt="Modern Addis Ababa skyline in Central Ethiopia"
+              loading="lazy"
+            >
+            <div class="destination-badge">4 Destinations</div>
+          </div>
+          <div class="destination-content">
+            <h3>Central Ethiopia</h3>
+            <p class="destination-count">Capital Region • Mountain Escapes</p>
+            <p class="destination-description">
+              Experience the vibrant energy of Addis Ababa and the serene beauty of surrounding highlands.
+            </p>
+            <a href="destination.html#central" class="explore-btn">
+              Explore Region <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Southern Ethiopia -->
+        <article class="destination-card">
+          <div class="destination-image">
+            <img 
+              src="/images/southern/hamer.jpg" 
+              alt="Cultural tribes and landscapes in Southern Ethiopia"
+              loading="lazy"
+            >
+            <div class="destination-badge">4 Destinations</div>
+          </div>
+          <div class="destination-content">
+            <h3>Southern Ethiopia</h3>
+            <p class="destination-count">Cultural Diversity • Natural Beauty</p>
+            <p class="destination-description">
+              Immerse yourself in ancient traditions and explore stunning lakes, rivers, and national parks.
+            </p>
+            <a href="destination.html#southern" class="explore-btn">
+              Explore Region <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Eastern Ethiopia -->
+        <article class="destination-card">
+          <div class="destination-image">
+            <img 
+              src="/images/eastern/hyena.jpg" 
+              alt="Hyena feeding tradition in Eastern Ethiopia"
+              loading="lazy"
+            >
+            <div class="destination-badge">3 Destinations</div>
+          </div>
+          <div class="destination-content">
+            <h3>Eastern Ethiopia</h3>
+            <p class="destination-count">Ancient Cities • Desert Landscapes</p>
+            <p class="destination-description">
+              Discover walled cities, coffee traditions, and unique wildlife in this culturally rich region.
+            </p>
+            <a href="destination.html#eastern" class="explore-btn">
+              Explore Region <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Western Ethiopia -->
+        <article class="destination-card">
+          <div class="destination-image">
+            <img 
+              src="/images/western/coffee.jpg" 
+              alt="Coffee plantations in Western Ethiopia"
+              loading="lazy"
+            >
+            <div class="destination-badge">3 Destinations</div>
+          </div>
+          <div class="destination-content">
+            <h3>Western Ethiopia</h3>
+            <p class="destination-count">Coffee Origin • Rainforests</p>
+            <p class="destination-description">
+              Journey to the birthplace of coffee and explore lush forests, waterfalls, and wildlife reserves.
+            </p>
+            <a href="destination.html#western" class="explore-btn">
+              Explore Region <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </section>
+  
+</section>
+</div>
+   <!-- Testimonials -->
+   <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Traveler Experiences</h2>
+        <p class="section-description">
+          Hear from adventurers who discovered Ethiopia with us
+        </p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Discover Abysinia showed me parts of my own country I never knew existed. The cultural tours were authentic and deeply moving."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img 
+              src="../images/Screenshot (1617).png" 
+              alt="Abebe Bekele"
+              loading="lazy"
+            >
+            <div>
+              <h4>Abebe Bekele</h4>
+              <p>Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "From the Simien Mountains to Lalibela, every detail was perfectly organized. Best travel experience in Ethiopia!"
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img 
+              src="../images/Screenshot (1618).png" 
+              alt="Hirut Tadesse"
+              loading="lazy"
+            >
+            <div>
+              <h4>Hirut Tadesse</h4>
+              <p>Gondar, Ethiopia</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "The guides were knowledgeable, passionate, and flexible. They made our family trip through Southern Ethiopia unforgettable."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img 
+              src="../images/Screenshot (1619).png" 
+              alt="Dawit Gebre"
+              loading="lazy"
+            >
+            <div>
+              <h4>Dawit Gebre</h4>
+              <p>Hawassa, Ethiopia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">
+          Everything you need to know about traveling in Ethiopia
+        </p>
+      </div>
+      
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-1" class="accordion-toggle">
+          <label for="faq-1" class="accordion-header">
+            What's included in your Ethiopian tour packages?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>Our packages include accommodation, expert local guides, transportation, entrance fees to historical sites, and select traditional meals. Specific inclusions vary by destination and package tier.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-2" class="accordion-toggle">
+          <label for="faq-2" class="accordion-header">
+            Can I customize my Ethiopian itinerary?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>Absolutely! We offer flexible customization for all tours. Contact our experts to create a personalized itinerary featuring your preferred sites, cultural experiences, and natural wonders.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-3" class="accordion-toggle">
+          <label for="faq-3" class="accordion-header">
+            What is your cancellation policy?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>Full refund for cancellations 30+ days before departure. 50% refund for 15-30 days. Within 15 days, non-refundable but reschedulable subject to availability.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-4" class="accordion-toggle">
+          <label for="faq-4" class="accordion-header">
+            Do I need a visa to travel to Ethiopia?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>Most visitors can obtain an e-visa online or visa on arrival at Bole International Airport. We guide you through the application process.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-5" class="accordion-toggle">
+          <label for="faq-5" class="accordion-header">
+            Are group discounts available?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>Yes! Groups of 4+ receive 10% off, 8+ receive 15% off, and 12+ receive 20% off. Contact us for custom group package pricing.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <input type="checkbox" id="faq-6" class="accordion-toggle">
+          <label for="faq-6" class="accordion-header">
+            What payment methods do you accept?
+            <i class="ri-add-line accordion-icon"></i>
+          </label>
+          <div class="accordion-content">
+            <p>We accept major credit cards, mobile money (CBE Birr, M-Pesa), and bank transfers in ETB or USD. Flexible payment plans available for larger bookings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Discover Abysinia</h3>
+            <p class="footer-description">
+              Your trusted partner for authentic Ethiopian travel experiences since 2010. Discover our country's rich heritage with local experts.
+            </p>
+            <div class="trust-badges">
+              <span class="badge"><i class="ri-award-fill"></i> Certified Guides</span>
+              <span class="badge"><i class="ri-shield-check-fill"></i> Licensed Operator</span>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="destination.html">Destinations</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Contact Details</h3>
+            <ul class="contact-details">
+              <li>
+                <i class="ri-map-pin-fill"></i>
+                <span>Bole Road, Addis Ababa, Ethiopia</span>
+              </li>
+              <li>
+                <i class="ri-phone-fill"></i>
+                <span>+251 911 234 567</span>
+              </li>
+              <li>
+                <i class="ri-mail-fill"></i>
+                <span>info@DiscoverAbysinia.com</span>
+              </li>
+              <li>
+                <i class="ri-time-fill"></i>
+                <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-section">
+            <h3 class="footer-title">Travel Updates</h3>
+            <p class="newsletter-text">
+              Subscribe for travel tips and exclusive Ethiopian destination offers.
+            </p>
+            <form class="newsletter-form">
+              <div class="newsletter-input">
+                <input 
+                  type="email" 
+                  placeholder="Your email address"
+                  aria-label="Email for newsletter subscription"
+                >
+                <button type="submit" aria-label="Subscribe to newsletter">
+                  <i class="ri-send-plane-fill"></i>
+                </button>
+              </div>
+              <p class="privacy-note">
+                By subscribing, you agree to our Privacy Policy
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year">2025</span> Discover Abysinia Travel. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Discover Abysinia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style/contact.css" />
+    
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1><a href="../html/index.html">Discover Abysinia</a></h1>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/destination.html">Destinations</a></li>
+              <li><a href="../html/contact.html" class="active">Contact</a></li>
+            </ul>
+          </nav>
+          
+          <!-- Mobile Navigation Toggle -->
+          <label for="mobile-menu-toggle" class="mobile-menu-btn">
+            <i class="ri-menu-line"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-toggle" />
+    <nav class="mobile-nav">
+      <div class="mobile-nav-content">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/destination.html">Destinations</a></li>
+          <li><a href="../html/contact.html" class="active">Contact</a></li>
+        </ul>
+        <label for="mobile-menu-toggle" class="mobile-close-btn">
+          <i class="ri-close-line"></i>
+        </label>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Get In Touch</h1>
+          <p class="hero-subtitle">
+            Ready to plan your next adventure? Contact our travel experts to create the perfect Ethiopian itinerary tailored just for you.
+          </p>
+          <a href="#contact-form" class="cta-button">
+            Start Planning <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+      <div class="container">
+        <!-- Contact Info & Form Grid -->
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="section-header">
+              <h2 class="section-title">Contact Information</h2>
+              <p class="section-description">
+                Have questions about Ethiopian travel? Our knowledgeable team is here to help you plan an unforgettable journey through Ethiopia's rich cultural heritage and stunning landscapes.
+              </p>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="ri-mail-fill"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Email Us</h3>
+                  <p>info@DiscoverAbysinia.com</p>
+                  <p>support@DiscoverAbysinia.com</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="ri-phone-fill"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Call Us</h3>
+                  <p>+251 911 234 567 (Ethiopia)</p>
+                  <p>+1 (555) 123-4567 (International)</p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="ri-map-pin-fill"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Visit Our Office</h3>
+                  <p>Bole Road, Addis Ababa</p>
+                  <p>Ethiopia</p>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="ri-chat-3-fill"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Social Media</h3>
+                  <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                      <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                      <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                      <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                      <i class="ri-whatsapp-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="office-hours">
+              <h3><i class="ri-time-fill"></i> Office Hours</h3>
+              <div class="hours-grid">
+                <div class="day-time">
+                  <span class="day">Monday - Friday</span>
+                  <span class="time">9:00 AM - 6:00 PM</span>
+                </div>
+                <div class="day-time">
+                  <span class="day">Saturday</span>
+                  <span class="time">10:00 AM - 4:00 PM</span>
+                </div>
+                <div class="day-time">
+                  <span class="day">Sunday</span>
+                  <span class="time closed">Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form" id="contact-form">
+            <div class="form-header">
+              <h3>Send Us a Message</h3>
+              <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <form class="enquiry-form">
+              <!-- Personal Information -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname" class="required">Full Name</label>
+                  <div class="input-wrapper">
+                    <i class="ri-user-line"></i>
+                    <input 
+                      type="text" 
+                      id="fullname" 
+                      placeholder="Enter your full name"
+                      required
+                      aria-required="true"
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="required">Email Address</label>
+                  <div class="input-wrapper">
+                    <i class="ri-mail-line"></i>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      placeholder="your.email@example.com"
+                      required
+                      aria-required="true"
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Details -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <div class="input-wrapper">
+                    <i class="ri-phone-line"></i>
+                    <input 
+                      type="tel" 
+                      id="phone" 
+                      placeholder="+251 911 234 567"
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="country">Country</label>
+                  <div class="input-wrapper">
+                    <i class="ri-globe-line"></i>
+                    <select id="country">
+                      <option value="" disabled selected>Select your country</option>
+                      <option value="ethiopia">Ethiopia</option>
+                      <option value="usa">United States</option>
+                      <option value="uk">United Kingdom</option>
+                      <option value="canada">Canada</option>
+                      <option value="australia">Australia</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <i class="ri-arrow-down-s-line select-arrow"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Travel Preferences -->
+              <div class="form-group">
+                <label for="destination">Destination Interest</label>
+                <div class="input-wrapper">
+                  <i class="ri-map-pin-line"></i>
+                  <select id="destination">
+                    <option value="" disabled selected>Select preferred destination</option>
+                    <option value="northern">Northern Historical Route</option>
+                    <option value="southern">Southern Cultural Route</option>
+                    <option value="eastern">Eastern Ethiopia</option>
+                    <option value="western">Western Ethiopia</option>
+                    <option value="all">All of Ethiopia</option>
+                  </select>
+                  <i class="ri-arrow-down-s-line select-arrow"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="travel-date">Preferred Travel Dates</label>
+                <div class="input-wrapper">
+                  <i class="ri-calendar-line"></i>
+                  <input 
+                    type="text" 
+                    id="travel-date" 
+                    placeholder="e.g., December 2024 - January 2025"
+                  >
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message" class="required">Your Message</label>
+                <div class="textarea-wrapper">
+                  <i class="ri-chat-3-line"></i>
+                  <textarea 
+                    id="message" 
+                    placeholder="Tell us about your dream Ethiopian adventure..."
+                    required
+                    aria-required="true"
+                    rows="6"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="submit-btn">
+                <i class="ri-send-plane-fill"></i>
+                Send Message
+              </button>
+
+              <!-- Form Note -->
+              <p class="form-note">
+                <i class="ri-information-line"></i>
+                We respect your privacy and will never share your information with third parties.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Success Message (Hidden by default) -->
+        <div class="success-message" id="success-message">
+          <div class="success-icon">
+            <i class="ri-checkbox-circle-fill"></i>
+          </div>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for contacting Discover Abysinia. Our travel expert will get back to you within 24 hours.</p>
+          <button class="close-btn" onclick="hideSuccessMessage()">Close</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Discover Abysinia</h3>
+            <p class="footer-description">
+              Your trusted guide to Ethiopia's most spectacular destinations. 
+              We specialize in creating authentic travel experiences that connect you with Ethiopia's rich cultural heritage.
+            </p>
+            <div class="trust-badges">
+              <span class="badge"><i class="ri-shield-check-fill"></i> Trusted Travel Agency</span>
+              <span class="badge"><i class="ri-award-fill"></i> Certified Guides</span>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/destination.html">Destinations</a></li>
+              <li><a href="#" class="active">Contact Us</a></li>
+              
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h3 class="footer-title">Contact Details</h3>
+            <ul class="contact-details">
+              <li>
+                <i class="ri-map-pin-fill"></i>
+                <span>Bole Road, Addis Ababa, Ethiopia</span>
+              </li>
+              <li>
+                <i class="ri-phone-fill"></i>
+                <span>+251 911 234 567</span>
+              </li>
+              <li>
+                <i class="ri-mail-fill"></i>
+                <span>contact@DiscoverAbysinia.com</span>
+              </li>
+              <li>
+                <i class="ri-time-fill"></i>
+                <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-section">
+            <h3 class="footer-title">Travel Updates</h3>
+            <p class="newsletter-text">
+              Subscribe to receive travel tips and exclusive offers for Ethiopian destinations.
+            </p>
+            <form class="newsletter-form">
+              <div class="newsletter-input">
+                <input 
+                  type="email" 
+                  placeholder="Your email address"
+                  aria-label="Email for newsletter subscription"
+                >
+                <button type="submit" aria-label="Subscribe to newsletter">
+                  <i class="ri-send-plane-fill"></i>
+                </button>
+              </div>
+              <p class="privacy-note">
+                By subscribing, you agree to our Privacy Policy
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year">2025</span> Discover Abysinia Travel. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
